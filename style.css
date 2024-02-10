@@ -4,13 +4,15 @@
 \*------------------------------------*/
 
 :root {
+  --font-color:           #0A1522;
   --bg-color:             #DEEBF3;
-  --product-background:   #ffffff;
-  --font-color:           #010101;
-  --highlight-color:      #059DC1;
-  --font:                'Roboto', sans-serif;
-  --secondary-font:      'Archivo', sans-serif;
-}
+  --product-bacground:    #ffffff;
+  --highlight-color:      #00B3CC;
+  --secondary-color-hover:#4cc9db;
+  --blue-transparent:     rgba(0,179,204,.2);
+  --font:                 'Roboto', sans-serif;
+  --secondary-font:       'Raleway', sans-serif;     
+  }
 
 
 
@@ -198,13 +200,16 @@ font-family: var(--font);
 font-weight: bold;
 font-size: .8rem;
 text-transform: uppercase;
-background: var(--highlight-color);
-padding: .9rem;
+padding: .5rem;
+border: 3px solid var(--blue-transparent);
 border-radius: 9999px;
 }
 
 a.header__button:hover {
-  color: var(--bg-color);
+    border-radius: 7px;
+    border: 3px solid transparent;
+    background-color: var(--blue-transparent);
+    transition: all .2s ease;
 }
 
 
@@ -216,7 +221,7 @@ a.header__button:hover {
 \*------------------------------------*/
 
 .product {
-background-color: var(--product-background);
+background-color: var(--product-bacground);
 box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 border-radius: 30px;
 margin-bottom: 25px;
@@ -255,20 +260,21 @@ padding-bottom: 1rem;
 
 .notes__calltext {
 display: inline-block;
-letter-spacing: .05rem;
 text-decoration: none;
 text-transform: uppercase;
-color: var(--product-background);
+font-size: .8rem;
+color: var(--font-color);
 font-weight: bold;
 margin-top: 3px;
-background-color: var(--highlight-color);
 padding: 0.6rem;
 border-radius: 9999px;
-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px;
+border: 3px solid var(--blue-transparent);
 }
 
 .notes__calltext:hover {
-  box-shadow: none;
+  border: 3px solid transparent;
+  border-radius: 7px;
+  background-color: var(--blue-transparent);
 }
 
 
@@ -292,7 +298,6 @@ footer {
   text-transform: uppercase;
   text-align: center;
   padding-top: 1.5rem;
-  letter-spacing: .5rem;
   font-weight:bold;
   font-size: 1.5rem;
 }
@@ -312,7 +317,7 @@ footer {
 }
 
 .footer__icon-1, .footer__icon-2, .footer__icon-3 {
-  width: 50px;
+  width: 40px;
   margin-left: 10px;
   margin-right: 10px;
  }
