@@ -66,7 +66,7 @@ h4 {
 }
 
 p, .product__text, .header__text {
-  font-size: 1.05rem;
+  font-size: .95rem;
   line-height: 1.4rem;
 }
 
@@ -149,7 +149,7 @@ main {
 .product-container {
 display:grid;
 grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(5, 1fr);
+grid-template-rows: repeat(3, 1fr);
 column-gap: 30px;
 place-items: stretch;
 }
